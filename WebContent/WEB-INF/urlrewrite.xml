@@ -1,0 +1,14 @@
+<urlrewrite>
+	<rule>
+		<from>^/danh-muc/(.*)/([0-9]+)/page/([0-9]+)$</from>
+		<to>/danhmuc?cid=$2&amp;page=$3</to>
+	</rule>
+	<rule>
+		<from>^/danh-muc/(.*)/([0-9]+)/chi-tiet/([0-9]+)$</from>
+		<to>/chitiet?dtid=$3</to>
+	</rule>
+	<rule>
+		<from>^/danh-muc/(.*)/([0-9]+)$</from>
+		<to>/danhmuc?cid=$2</to>
+	</rule>
+</urlrewrite>
